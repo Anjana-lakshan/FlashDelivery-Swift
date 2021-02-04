@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1300674525CADAAE00C1055A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1300674425CADAAE00C1055A /* Assets.xcassets */; };
 		1300674825CADAAE00C1055A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1300674725CADAAE00C1055A /* Preview Assets.xcassets */; };
 		1300674B25CADAAE00C1055A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1300674925CADAAE00C1055A /* LaunchScreen.storyboard */; };
+		136BA13225CBCC6F007D7730 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 136BA13125CBCC6F007D7730 /* GoogleService-Info.plist */; };
+		73BE451DE73A5A525731626C /* libPods-FlashDelivery-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BB2F3E864E78D191C40314 /* libPods-FlashDelivery-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		1300674725CADAAE00C1055A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1300674A25CADAAE00C1055A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1300674C25CADAAE00C1055A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		136BA13125CBCC6F007D7730 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		64BB2F3E864E78D191C40314 /* libPods-FlashDelivery-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlashDelivery-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EF1312A8FA0B2939CDBF0C /* Pods-FlashDelivery-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashDelivery-ios.release.xcconfig"; path = "Target Support Files/Pods-FlashDelivery-ios/Pods-FlashDelivery-ios.release.xcconfig"; sourceTree = "<group>"; };
+		805BEF67F889B732D310911F /* Pods-FlashDelivery-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashDelivery-ios.debug.xcconfig"; path = "Target Support Files/Pods-FlashDelivery-ios/Pods-FlashDelivery-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BE451DE73A5A525731626C /* libPods-FlashDelivery-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B624F8B611D653ADA33D421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				805BEF67F889B732D310911F /* Pods-FlashDelivery-ios.debug.xcconfig */,
+				68EF1312A8FA0B2939CDBF0C /* Pods-FlashDelivery-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1300673225CADAAD00C1055A = {
 			isa = PBXGroup;
 			children = (
 				1300673D25CADAAD00C1055A /* FlashDelivery-ios */,
 				1300673C25CADAAD00C1055A /* Products */,
+				0B624F8B611D653ADA33D421 /* Pods */,
+				B84E54BD4ABF8FD09F193B9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,7 @@
 				1300674425CADAAE00C1055A /* Assets.xcassets */,
 				1300674925CADAAE00C1055A /* LaunchScreen.storyboard */,
 				1300674C25CADAAE00C1055A /* Info.plist */,
+				136BA13125CBCC6F007D7730 /* GoogleService-Info.plist */,
 				1300674625CADAAE00C1055A /* Preview Content */,
 			);
 			path = "FlashDelivery-ios";
@@ -75,6 +95,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B84E54BD4ABF8FD09F193B9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64BB2F3E864E78D191C40314 /* libPods-FlashDelivery-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1300674F25CADAAE00C1055A /* Build configuration list for PBXNativeTarget "FlashDelivery-ios" */;
 			buildPhases = (
+				63562437E867160C40BBDDBD /* [CP] Check Pods Manifest.lock */,
 				1300673725CADAAD00C1055A /* Sources */,
 				1300673825CADAAD00C1055A /* Frameworks */,
 				1300673925CADAAD00C1055A /* Resources */,
+				D6311B7CE5D16E68313BA9C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,7 +141,7 @@
 				};
 			};
 			buildConfigurationList = 1300673625CADAAD00C1055A /* Build configuration list for PBXProject "FlashDelivery-ios" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -134,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				1300674B25CADAAE00C1055A /* LaunchScreen.storyboard in Resources */,
+				136BA13225CBCC6F007D7730 /* GoogleService-Info.plist in Resources */,
 				1300674825CADAAE00C1055A /* Preview Assets.xcassets in Resources */,
 				1300674525CADAAE00C1055A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63562437E867160C40BBDDBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashDelivery-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6311B7CE5D16E68313BA9C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashDelivery-ios/Pods-FlashDelivery-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashDelivery-ios/Pods-FlashDelivery-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashDelivery-ios/Pods-FlashDelivery-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1300673725CADAAD00C1055A /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		1300675025CADAAE00C1055A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805BEF67F889B732D310911F /* Pods-FlashDelivery-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +376,7 @@
 		};
 		1300675125CADAAE00C1055A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EF1312A8FA0B2939CDBF0C /* Pods-FlashDelivery-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

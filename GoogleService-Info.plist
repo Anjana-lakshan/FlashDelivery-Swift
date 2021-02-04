@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>584007073227-gf1vgq87i8um16n8dqjm4q3o4kei4su2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.584007073227-gf1vgq87i8um16n8dqjm4q3o4kei4su2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDtb7E52j3ona9K3KUKLJyogDRS3xq2OXs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>584007073227</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.company.FlashDelivery</string>
+	<key>PROJECT_ID</key>
+	<string>flash-delivery-5d8a9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flash-delivery-5d8a9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:584007073227:ios:a0e6a76359c0b6c652ca4e</string>
+</dict>
+</plist>
